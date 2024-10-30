@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS t_task (
+    id serial PRIMARY KEY,
+    title VARCHAR(80) NOT NULL,
+    description VARCHAR(1000) NOT NULL,
+    status VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
